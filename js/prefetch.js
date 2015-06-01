@@ -1,8 +1,10 @@
+var  
+
 var services = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     remote: {
-      url: '/services?query=%QUERY',
+      url: 'https://suggestion.herokuapp.com/services?query=%QUERY',
       wildcard: '%QUERY'
     }
 });
@@ -11,7 +13,7 @@ var establishment = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     remote: {
-      url: '/establishment?query=%QUERY',
+      url: 'https://suggestion.herokuapp.com/establishment?query=%QUERY',
       wildcard: '%QUERY'
     }
 });
