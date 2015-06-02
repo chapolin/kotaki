@@ -1,5 +1,6 @@
 var postData = {};
 var ua = navigator.userAgent;
+var pathApi = "https://suggestion.herokuapp.com";
 
 var device = {
 	Android: function() {
@@ -56,7 +57,7 @@ var buildPostData = function(key, id, value) {
 
 function sendData() {
     $.ajax({
-        url: '/services',
+        url: pathApi + '/services',
         type: 'POST',
         data: postData,
         dataType: 'json'

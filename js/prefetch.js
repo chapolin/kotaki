@@ -1,5 +1,3 @@
-var pathApi = "https://suggestion.herokuapp.com";
-
 var services = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
