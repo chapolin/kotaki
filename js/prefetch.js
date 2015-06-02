@@ -1,4 +1,4 @@
-var pathApi = "http://192.168.0.102:3000";
+var pathApi = "https://suggestion.herokuapp.com";
 
 var services = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
