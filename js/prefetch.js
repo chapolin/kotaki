@@ -2,7 +2,7 @@ var services = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     prefetch: {
-        url: '/services?query=all',
+        url: pathApi + '/services?query=all',
         ttl: 300
     }
 });
@@ -11,7 +11,7 @@ var establishment = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
 	prefetch: {
-	    url: '/establishment?query=all'
+	    url: pathApi + '/establishment?query=all'
 	}
 });
 
