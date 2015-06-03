@@ -58,7 +58,7 @@ var buildPostData = function(key, id, value) {
 
 var sendData = function() {
     $.ajax({
-        url: '/services',
+        url: pathApi + '/services',
         type: 'POST',
         data: postData,
         dataType: 'json'
