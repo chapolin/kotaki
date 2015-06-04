@@ -1,5 +1,5 @@
 <widget id="com.example.hello" version="0.0.1">
-    <name>HelloWorld</name>
+    <name>Kotaki</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -9,18 +9,9 @@
     <content src="index.html" />
     <access origin="*" />
     
-	<platform name="android">
-	    <!-- you can use any density that exists in the Android project -->
-	    <splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi"/>
-	    <splash src="res/screen/android/splash-land-hdpi.png" density="land-ldpi"/>
-	    <splash src="res/screen/android/splash-land-hdpi.png" density="land-mdpi"/>
-	    <splash src="res/screen/android/splash-land-hdpi.png" density="land-xhdpi"/>
-	
-	    <splash src="res/screen/android/splash-land-hdpi.png" density="port-hdpi"/>
-	    <splash src="res/screen/android/splash-land-hdpi.png" density="port-ldpi"/>
-	    <splash src="res/screen/android/splash-land-hdpi.png" density="port-mdpi"/>
-	    <splash src="res/screen/android/splash-land-hdpi.png" density="port-xhdpi"/>
+	<platform name="browser">
+	    <preference name="SplashScreen" value="res/screen/android/splash-land-hdpi.png" /> <!-- defaults to "img/logo.png" -->
+	    <preference name="SplashScreenDelay" value="10000" /> <!-- defaults to "3000" -->
+	    <preference name="SplashScreenBackgroundColor" value="green" /> <!-- defaults to "#464646" -->
 	</platform>
-	
-	<preference name="SplashScreenDelay" value="20000" />
 </widget>
