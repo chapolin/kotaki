@@ -1,6 +1,18 @@
-<platform name="android">
+<widget id="com.example.hello" version="0.0.1">
+    <name>HelloWorld</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@callback.apache.org" href="http://phonegap.com">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    
+    <platform name="android">
     <!-- you can use any density that exists in the Android project -->
     <splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi"/>
 </platform>
 
 <preference name="SplashScreenDelay" value="10000" />
+</widget>
